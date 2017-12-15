@@ -1,4 +1,4 @@
-.pagtop{background-color: #ff6d00;height: 2px;}
+.pagtop{background-color: #ff6d00;height: 1px;}
 .header{background-color: #f8f8f8;}
 .pagbottom{background-color: #337ab7;height: 2px;}
 .headernav li a:hover {
@@ -121,6 +121,25 @@ background-color: #91bed4
 
             }
 
+            .carousel-indicators li {
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                margin: 1px;
+                text-indent: -999px;
+                border: 1px solid #ffffff;
+                border-radius: 10px;
+                cursor: pointer;
+                background-color: #000 \9;
+                background-color: rgba(0, 0, 0, 0);
+            }
+            .carousel-indicators .active {
+                margin: 0;
+                width: 10px;
+                height: 10px;
+                background-color: #ffffff;
+            }
+
 
             }
         @media (min-width: 646px) {
@@ -132,7 +151,7 @@ background-color: #91bed4
         }
 
 
-        .banner1 img {  /*此处不需加容器，为方便复杂情况参考，暂时保留 可以直接用.banner img标签*/ /*dan meiti chaxun yaohe shamgmian tongyi*/
+        .banner1 img {
 display: block;margin: 0 auto;
             max-width: 100%;
         }
@@ -148,3 +167,4 @@ display: block;margin: 0 auto;
             padding-left: 0;
             margin-left: -30%;
         text-align: center;}
+
