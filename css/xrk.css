@@ -1,0 +1,150 @@
+.pagtop{background-color: #ff6d00;height: 2px;}
+.header{background-color: #f8f8f8;}
+.pagbottom{background-color: #337ab7;height: 2px;}
+.headernav li a:hover {
+            text-decoration: none;
+            background-color: #ff6d00
+
+        }
+
+       .headernav li:hover {
+        }
+
+       .headernav  li a {
+            /*line-height: 100px;*/
+            display: block;
+            /*height: 100%;*/
+        }
+
+       .header ul {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 0;min-width: 140px;
+
+        }
+
+       .headernav li {
+            width: 20%;
+            float: left;
+            /*height: 100px;*/
+            font-size: 18px;
+            /*height: 100px;*/
+        }
+
+       .headernav span {
+            display: block;
+            line-height: 30px;
+        }
+
+
+
+        .logobox img {
+            padding-top: 6px;
+            padding-bottom: 6px;
+            height: 85px;
+        }
+
+       .headernav  .md-li img {
+            height: 40px;
+            display: inline-block;
+            margin: 15px auto 0
+        }
+
+
+
+
+
+
+
+        @media (max-width: 768px) {
+            .logobox img {
+                display: block;
+                margin: auto;
+                height: 70px;
+                padding: 6px 0;
+            }
+
+            .logobox {
+                margin-left: -15px;
+                margin-right: -15px;
+                border-bottom: solid 1px #eeeeee;
+                border-top: solid 1px #dddddd
+            }
+
+            .pagtop {
+background-color: #91bed4
+            }
+
+            .headernav .md-li img {
+                height: 30px;
+            }
+
+            .headernav  li {
+                font-size: 16px
+            }
+
+            .pagtop {
+                border-bottom: solid 1px #eeeeee;
+            }
+        }
+        @media (max-width: 646px) {
+
+
+            .banner1 {
+                position: relative;
+                overflow: hidden;
+                height: 170px;
+
+            }
+            .banner1 img {
+                position: absolute;
+                width: 646px;
+                left: 50%;
+                margin-left: -323.19px;
+            }
+
+            .carousel-inner {
+                position: relative;
+                overflow: hidden;
+                height: 170px;
+            }
+            .carousel-inner .item {
+                position: absolute;
+                width: 646px;
+                left: 50%!important;
+                margin-left: -323.19px;
+            }
+            .carousel-inner .item img {
+                /*position: absolute;*/
+
+                /*width: 646px;*/
+
+            }
+
+
+            }
+        @media (min-width: 646px) {
+
+            .banner1 {
+            /*position: relative;*/
+            /*overflow: hidden;*/
+            /*height: 526px;*/
+        }
+
+
+        .banner1 img {  /*此处不需加容器，为方便复杂情况参考，暂时保留 可以直接用.banner img标签*/ /*dan meiti chaxun yaohe shamgmian tongyi*/
+display: block;margin: 0 auto;
+            max-width: 100%;
+        }
+        }
+        .carousel-inner .item img{display:block;height: auto;max-width: 100%;margin: 0 auto;}
+
+        .carousel-indicators {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            z-index: 15;
+            width: 60%;
+            padding-left: 0;
+            margin-left: -30%;
+        text-align: center;}
