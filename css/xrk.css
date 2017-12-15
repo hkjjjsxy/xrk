@@ -3,7 +3,7 @@
     height: 1px;
 }
 
-.header {
+body {
     background-color: #f8f8f8;
 }
 
@@ -14,8 +14,7 @@
 
 .headernav li a:hover {
     text-decoration: none;
-    background-color: #ff6d00
-
+    color: #ff6d00
 }
 
 .headernav li:hover {
@@ -171,3 +170,8 @@
     margin-bottom: 0px
 }
 
+.activity {
+    /*background-color: #e7e7e7;*/
+    margin: 50px auto;
+    /*padding: 15px;*/
+}
