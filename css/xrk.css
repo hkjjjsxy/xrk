@@ -1,17 +1,51 @@
 .pagtop {
     background-color: #ff6d00;
     height: 1px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+
 }
 .pagbottom {
-    background-color: #dddddd;
-    padding: 10px 0;
+    background-color: #ff6d00;
+    height: 1px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0px;
+
+    z-index: 1040;
 }
+.bottom {
+    background-color: #474747;
+    padding: 10px 0;
+    color: #ffffff;
+}
+.bottom p,.bottom h4{color: #ffffff}
+.bottom img {
+    float: right
+}
+.bottom2 {
+    background-color: #222222;
+}
+.bottom2 p {
+    margin: 0 auto;
+    color: #474747;
+    padding: 5px
+}
+.bottom3 a{color: #8e8e8e
+}
+
 body {
     background-color: #f8f8f8;
 }
 body {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    color: #a35050;
+
 }
+p,h4,h3,h2,h5{color: #a35050}
 
 .headernav li a:hover {
     text-decoration: none;
@@ -23,6 +57,7 @@ body {
     /*line-height: 100px;*/
     display: block;
     /*height: 100%;*/
+    /*color: #0365a4;*/
 }
 .header ul {
     width: 100%;
@@ -64,8 +99,8 @@ body {
         border-bottom: solid 1px #eeeeee;
         border-top: solid 1px #dddddd
     }
-    .pagtop {
-        background-color: #91bed4
+    .pagtop, .pagbottom {
+        display: none
     }
     .headernav .md-li img {
         height: 30px;
@@ -112,7 +147,10 @@ body {
         width: 10px;
         height: 10px;
     }
-
+    .activitybottom {
+        display: none
+    }
+    /*.bottom img{float: left}*/
 
 }
 @media (min-width: 646px) {
@@ -126,6 +164,9 @@ body {
         margin: 0 auto;
         max-width: 100%;
     }
+
+    .bottom3 li{display: inline-block;float:none;width: 10%}
+
 }
 .carousel-inner .item img {
     display: block;
@@ -140,9 +181,35 @@ body {
     margin-bottom: 0;
 }
 .activity {
-    margin-top: 40px ;
-margin-bottom: 10px}
-.activity .thumbnail{background-color:inherit}
-.activity2{background-color: rgba(177, 232, 255, 0.52)
+    margin-top: 40px;
+    margin-bottom: 10px
 }
-.thumbnail{border: none}
+.activity .thumbnail {
+    background-color: inherit
+}
+.activity2 {
+    background-color: rgba(177, 232, 255, 0.52)
+}
+.thumbnail {
+    border: none
+}
+.imgf img {
+    border-radius: 50%;
+}
+
+.bottom3 img {
+    display: block;
+    margin: auto;
+    height: 40px;
+    padding: 6px 0;
+}
+.bottom3 {
+    background-color: #474747;
+    /*padding-bottom: 2px;*/
+    /*margin-left: -15px;*/
+    /*margin-right: -15px;*/
+    /*border-bottom: solid 1px #eeeeee;*/
+    border-top: solid 1px #4f4f4f
+}
+.bottom3 ul{display: block;max-width: 100%}
+.bottom3 .list-unstyled{margin-left: auto;margin-right: auto}
