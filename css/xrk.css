@@ -3,8 +3,8 @@ body {
 }
 body {
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-    color: #a94442;
-    /*color: #d9534f;*/
+    /*color: #a94442;*/
+    color: #c25554;
     /*font-size: 16px;*/
 
 }
@@ -38,7 +38,11 @@ body {
 
 }
 .bgc-r1 {
-    background-color: #ef7060;
+    background-color: #d9534f;
+    /*background-color: #d9534f;*/
+}
+.bgc-r2 {
+    background-color: #d9534f;
     /*background-color: #d9534f;*/
 }
 .c-w {
@@ -50,7 +54,6 @@ body {
 .c-r {
     color: #a94442;
 }
-
 .logobox img {
     padding-top: 6px;
     padding-bottom: 6px;
@@ -74,10 +77,9 @@ body {
 .headernav li a {
     display: block;
 }
-.headernav li a:hover,.bottomaddress a:hover
-{
+.headernav li a:hover, .bottomaddress a:hover {
     text-decoration: none;
-    color: #a35050;
+    color: #ff6d00;
 }
 .md-li img {
     height: 40px;
@@ -123,7 +125,8 @@ body {
         display: none
     }
     .logoabout {
-        width: 50%}
+        width: 50%
+    }
 }
 @media (max-width: 646px) {
     .banner1 img {
@@ -156,7 +159,6 @@ body {
         height: 10px;
     }
 
-
 }
 @media (min-width: 646px) {
 
@@ -171,30 +173,40 @@ body {
         width: 10%
     }
     .activity {
-        padding: 30px 0;
+        padding: 40px 0;
     }
 
 }
-.activity .thumbnail {
+.activity .activitycard {
     background-color: inherit
 }
-.thumbnail {
+.activitycard {
     border: none;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 0;
 }
-.thumbnail .caption {
+.cardtext {
+    position: absolute;
+    background-color: rgba(215, 83, 79, 0.4);
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.activity1 .cardtext {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.activity  a {
     color: inherit;
 }
-
-.thumbnail .caption p {
-     /*color: #e2e2e2;*/
-     font-size: 12px;
- }
-.activity1 .thumbnail .caption p {
-    /*color: rgba(169, 68, 66, 0.86);*/
-    font-size: 12px;
+.activity  a:hover {
+    text-decoration: none;
+    color: #ff6d00;
+    cursor:pointer
 }
-.logoabout  {
+.logoabout {
     margin-top: 30px;
 }
 .bottomnav img {
@@ -204,10 +216,12 @@ body {
     padding: 6px 0;
 }
 .bottomnav {
-    border-top: solid 1px #4f4f4f
+    border-top: solid 1px #4f4f4f;
+    padding-top: 8px;
+    padding-bottom: 4px;
 }
 .bottomaddress {
-    padding: 10px 0;
+    padding: 15px 0;
 }
 .bottomcopyright p {
     margin: 0 auto;
