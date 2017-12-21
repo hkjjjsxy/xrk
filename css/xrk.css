@@ -180,6 +180,7 @@ body {
 .activity .activitycard {
     background-color: inherit
 }
+.activity  img{display: block;max-width: 100%;margin-right: auto;margin-left: auto}
 .activitycard {
     border: none;
     margin-bottom: 20px;
